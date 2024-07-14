@@ -1,0 +1,287 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&family=Urbanist:ital,wght@0,800;1,800&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Red Hat Text", sans-serif;
+}
+body {
+    width: 100%;
+    min-width: 100vh;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #00CB00;
+    padding: 5% 5%;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+button,input{
+    background: none;
+    border: none;
+    outline: none;
+}
+.rass-l7irba {
+    max-width: 1200px;
+    width: 100%;
+    min-height: 90vh;
+    height: 100%;
+    background: #004E00;
+    border-radius: 25px;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+    border: 5px solid #1D1D1D;
+    box-shadow: 0px 0px 25px #004E00;
+}
+.navbar {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    padding: 20px 4%;
+}
+.nav-left,.nav-right {
+    width: fit-content;
+    display: flex;
+    align-items: top;
+    gap: 30px;
+}
+.logo-taena {
+    width: 250px;
+}
+.search-bar {
+    width: 300px;
+    display: flex;
+    justify-content:space-between;
+    flex-direction: row;
+    align-items: flex-start;
+    background: #00CB00;
+    padding: 8px 8px 8px 13px;
+    border-radius: 9px;
+}
+.search-bar img {
+    width: 22px;
+    height: 22px;
+}
+.search-bar input {
+    width: 100%;
+    font-size: 17px;
+    font-weight: 550;
+    padding-left: 15px;
+    color: #1D1D1D;
+}
+.setting {
+    width: 35px;
+    height: fit-content;
+}
+.bounadem {
+    position: relative;
+}
+.bounadem img { 
+    width: 35px;
+    border-radius: 50%;
+    border: 3px solid #00CB00;
+}
+.bounadem::after {
+    content: '';
+    width: 13px;
+    height: 13px;
+    background: greenyellow;
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-radius: 50%;
+}
+.bottom-sec {
+    width: 100%;
+    height: 76.5vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0 4% 20px 4%;
+    gap: 20px;
+    overflow: hidden;
+}
+.les-options {
+    width: 250px;
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: scroll;   
+}
+.les-options::-webkit-scrollbar{
+    display: none;
+}
+.les-options ul{
+    list-style-type: none;
+    background: #1D1D1D;
+    padding: 40px 20px 20px 20px;
+    border-radius: 20px;
+
+}
+.les-options ul li {
+    margin: 15px 0;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.les-options ul li:first-child {
+    margin-top: 0;
+}
+.les-options ul li img {
+    width: 25px;
+}
+.les-options ul li a {
+    text-decoration: none;
+    color: #00CB00;
+    font-weight: 500;
+    font-size: 18px;
+    transition: 0.4s;
+}
+.les-options ul li a:hover , .les-options ul li .active{
+    color: #fff;
+}
+.chat-sec {
+    width: 100%;
+    height: fit-content;
+    margin-top: 20px;
+}
+.chat {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin: 10px 0;
+    background: #1D1D1D;
+    padding: 10px 20px;
+    border-radius: 15px;
+    transition: 0.4s;
+}
+.chat img {
+    width: 35px;
+    border-radius: 50%;
+    border: 3px solid #00CB00;
+}
+.chat a {
+    font-size: 17px;
+    color: #00CB00;
+    font-weight: 500;
+    transition: 0.4s;
+}
+.chat:hover {
+    background: #00CB00;
+}
+.chat:hover a {
+    color: #004E00;
+}
+.salon-de-the {
+    flex-grow: 1;
+    height: 100%;
+    background: #1D1D1D;
+    border-radius: 20px;
+    overflow: hidden;
+}
+.chat-header {
+    width: 100%;
+    height: fit-content;
+    padding: 10px 4% 5px 4%;
+    border-bottom: 2px solid #004E00;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+
+}
+.user-header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.user-header .user-main img{
+    width: 50px;
+    border-radius: 50%;
+    border: 3px solid #94ff94;
+
+}
+.user-main{
+    position: relative;
+}
+.user-main::after {
+    content:'';
+    width: 13px;
+    height: 13px;
+    background: greenyellow;
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-radius: 50%;
+    z-index: 20;
+}
+.user-header h2{
+    margin-top: -8px;
+    color: #00CB00;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+}
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 500px;
+}
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+.user-list .user {
+    background: #1D1D1D;
+    padding: 10px 20px;
+    border-radius: 15px;
+    margin: 10px 0;
+    cursor: pointer;
+    transition: 0.4s;
+}
+.user-list .user:hover {
+    background: #00CB00;
+    color: #004E00;
+}
+.user-list .user.selected {
+    background: #00CB00;
+    color: #004E00;
+}
+.selected-user {
+    color: #00CB00;
+    font-weight: bold;
+}
+.meta {
+    color: white;
+}
